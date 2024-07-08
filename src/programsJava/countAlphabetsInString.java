@@ -1,6 +1,6 @@
 package programsJava;
 
-public class coumtAlphabetsInString {
+public class countAlphabetsInString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

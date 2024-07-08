@@ -23,7 +23,8 @@ public class SpecialArray {
 				flag =1;
 			}
 			else {
-				flag =0;			
+				flag =0;
+				break;
 			}		
 		}
 		
