@@ -8,17 +8,17 @@ public class SortArray {
 		int[] arr = {6,5,8,3,4,2};
 		int len = arr.length;
 		System.out.println("Size of array: " + len);
-		
-		
+
+
 		sortArrayLowesttoHighest(arr);
 		System.out.println("\n");
 		sortArrayHighesttoLowest(arr);
-		
+
 	}
 
 	private static void sortArrayHighesttoLowest(int[] array) {
 		int len = array.length;
-		System.out.print("{");  
+		System.out.print("{");
 		int temp = 0;
 		for( int i=0; i<len; i++){
 			for (int j= i+1; j<len; j++){
@@ -30,19 +30,20 @@ public class SortArray {
 					array[j]= temp;
 				}
 			}
-			System.out.print(array[i]);  
-			if(i<len-1)
-				System.out.print(", ");  
+			System.out.print(array[i]);
+			if(i<len-1) {
+				System.out.print(", ");
+			}
 		}
-		System.out.print("}");  
-		
+		System.out.print("}");
+
 	}
-		
-	
+
+
 
 	private static void sortArrayLowesttoHighest(int[] array) {
 		int len = array.length;
-		System.out.print("{");  
+		System.out.print("{");
 		int temp = 0;
 		for( int i=0; i<len; i++){
 			for (int j= i+1; j<len; j++){
@@ -54,12 +55,13 @@ public class SortArray {
 					array[j]= temp;
 				}
 			}
-			System.out.print(array[i]);  
-			if(i<len-1)
-				System.out.print(", ");  
+			System.out.print(array[i]);
+			if(i<len-1) {
+				System.out.print(", ");
+			}
 		}
-		System.out.print("}");  
-		
+		System.out.print("}");
+
 	}
 
 }

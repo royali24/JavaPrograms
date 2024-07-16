@@ -18,14 +18,14 @@ public class UniqueArray {
 		int length = nums.length;
 		System.out.println("length of array: " +length);
 
-		List<Integer> li = new ArrayList<Integer>();
+		List<Integer> li = new ArrayList<>();
 		for(int i=0; i<length; i++) {
 			if(!li.contains(nums[i])) {
 				li.add(nums[i]);
 			}
 		}
 
-		return li;      
+		return li;
 	}
 
 

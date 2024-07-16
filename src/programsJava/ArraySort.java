@@ -21,7 +21,7 @@ public class ArraySort {
 					array[j]=temp;
 				}
 			}
-			
+
 			System.out.print(array[i]);
 			if(i<len-1) {
 				System.out.print(", ");

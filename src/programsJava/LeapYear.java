@@ -10,7 +10,7 @@ public class LeapYear {
 		// TODO Auto-generated method stub
 
 		//count the number of leap years in between 2 dates
-		
+
 		String toDate;
 		String fromDate;
 
@@ -20,9 +20,9 @@ public class LeapYear {
 		System.out.println("Enter beginning year");
 		fromDate = scan.nextLine();
 		//int total_leap_years= countLeapYears(toDate,fromDate);
-		//System.out.println("total number of leap years between " + fromDate + " to " + toDate+ " is: " +  total_leap_years +" years.");	
-		 
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+		//System.out.println("total number of leap years between " + fromDate + " to " + toDate+ " is: " +  total_leap_years +" years.");
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		//see if a given year is leap year or not
 		/*System.out.println("Enter the year to check if it is leap year");
@@ -40,19 +40,19 @@ public class LeapYear {
 		*/
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
+
 		//Print all leap years between a range
 		List LeapYears=  leapYearRange(fromDate, toDate);
 		System.out.println("Leap years are: " +LeapYears);
-	}		
-	
-	
-	
+	}
+
+
+
 	private static List<Integer> leapYearRange(String fromDate, String toDate) {
 		// TODO Auto-generated method stub
 		int start_year = Integer.valueOf(fromDate);
 		int end_year = Integer.valueOf(toDate);
-		List<Integer> li = new ArrayList<Integer>();
+		List<Integer> li = new ArrayList<>();
 		for (int i= start_year; i<= end_year; i++) {
 			if(i%4==0) {
 				if(i%100==0 && i%400==0) {
@@ -65,7 +65,7 @@ public class LeapYear {
 		}
 		return li;
 	}
-	
+
  	private static boolean checkIfYearIsLeap(int year) {
 		// TODO Auto-generated method stub
 		int flag =1;
@@ -90,21 +90,22 @@ public class LeapYear {
 			flag =0;
 		}
 
-		if (flag==0)
+		if (flag==0) {
 			return false;
-		else
+		} else {
 			return true;
+		}
 
 	}
 
 	public static int countLeapYears(String toDate, String fromDate) {
 		// TODO Auto-generated method stub
 		int begin_date = Integer.valueOf(fromDate);
-		int last_date = Integer.valueOf(toDate);		
+		int last_date = Integer.valueOf(toDate);
 		int numberOfYears = last_date-begin_date;
 		System.out.println(numberOfYears);
 		int total_leap_years = numberOfYears/4;
-		return  total_leap_years;		
+		return  total_leap_years;
 	}
 
 }
