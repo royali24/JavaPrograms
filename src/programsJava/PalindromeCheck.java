@@ -5,17 +5,17 @@ public class PalindromeCheck {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s= "malayalaMa";
+		String s= "malayalaM";
 
 		s=s.toLowerCase();
 		char[] ch =s.toCharArray();
 		int flag=0;
 		int len= ch.length;
 
-		for(int i=0; i<=(len/2); ) {
+		for(int i=0; i<=(len/2);i++ ) {
 
 			if(ch[i]==ch[(len-1-i)]) {
-				i++;
+				flag=0;
 			}
 			else {
 				flag=1;
