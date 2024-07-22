@@ -18,7 +18,7 @@ public class CountWordsHashMap {
 			if (map.containsKey(words[i])) {
 				int count = map.get(words[i]);
 				
-				System.out.println(words[i]+ count);
+				//System.out.println(words[i]+ count);
 				
 				map.put(words[i], count + 1);
 				
@@ -28,6 +28,9 @@ public class CountWordsHashMap {
 			}
 		}
 		System.out.println(map);
+		
+		
+	
 		
 	}
 

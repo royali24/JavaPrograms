@@ -10,7 +10,7 @@ public class CreateSet {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Set<String> travelwish = new HashSet();
+		Set<String> travelwish = new HashSet<String>();
 		travelwish.add("Venice");
 		travelwish.add("Tuscany");
 		travelwish.add("Edinburg");

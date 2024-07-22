@@ -22,6 +22,7 @@ public class removeNumberFromArray {
 		}
 		System.out.println(final_array);
 
+		
 	}
 
 }

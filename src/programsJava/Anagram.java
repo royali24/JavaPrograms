@@ -31,6 +31,8 @@ public class Anagram {
 		else {
 			System.out.println("String length does not match. hence its not an anagram");
 		}
+		
+
 	}
 
 }

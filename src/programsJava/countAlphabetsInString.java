@@ -26,9 +26,8 @@ public class countAlphabetsInString {
 						str=String.valueOf(characters);
 					}
 				}
-			System.out.println(characters[i] + " is repeated " + x+ " times.");
+			System.out.println(characters[i] + " is repeated " + x + " times.");
 			}
 		}
 	}
-
 }
