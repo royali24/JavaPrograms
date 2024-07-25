@@ -6,8 +6,6 @@ public class SortArray {
 		// TODO Auto-generated method stub
 
 		int[] arr = {6,5,8,3,4,2};
-		int len = arr.length;
-		System.out.println("Size of array: " + len);
 
 
 		sortArrayLowesttoHighest(arr);
@@ -18,8 +16,10 @@ public class SortArray {
 
 	private static void sortArrayHighesttoLowest(int[] array) {
 		int len = array.length;
-		System.out.print("{");
 		int temp = 0;
+		
+		System.out.print("{");
+	
 		for( int i=0; i<len; i++){
 			for (int j= i+1; j<len; j++){
 
@@ -43,8 +43,10 @@ public class SortArray {
 
 	private static void sortArrayLowesttoHighest(int[] array) {
 		int len = array.length;
-		System.out.print("{");
 		int temp = 0;
+		
+		System.out.print("{");
+	
 		for( int i=0; i<len; i++){
 			for (int j= i+1; j<len; j++){
 

@@ -15,8 +15,8 @@ public class ArrayArrange {
 
 		int length = array.length;
 
-		List<Integer> l1 = new ArrayList();
-		List<Integer> l2 = new ArrayList();
+		List<Integer> l1 = new ArrayList<Integer>();
+		List<Integer> l2 = new ArrayList<Integer>();
 
 
 		for(int i=0; i<length; i++) {
@@ -28,7 +28,7 @@ public class ArrayArrange {
 				l2.add(array[i]);
 			}
 		}
-		List<Integer> finalList = new ArrayList();
+		List<Integer> finalList = new ArrayList<Integer>();
 
 		finalList.addAll(l1);
 		finalList.addAll(l2);
