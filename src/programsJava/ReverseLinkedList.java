@@ -17,8 +17,13 @@ public class ReverseLinkedList {
 		
 		System.out.println(list);
 		
-		list.sort(Collections.reverseOrder());
+		//list.sort(Collections.reverseOrder());
+				
+		
+		Collections.reverse(list);
+		
 		System.out.println(list);
+
 	}
 
 }

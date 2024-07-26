@@ -1,21 +1,21 @@
 package programsJava;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Test {
 
 	public static void main(String args[]) {
 		
-		int[] array = {2,1,32,2,2,5,6};
+		int[] array = {1,12,6,3,4,5};
 		
 		int temp=array[0];
 		
-		for(int i: array) {
-			if(temp<i) {
-				temp=i;
+		for(int i=1; i<array.length; i++) {
+			if(temp<array[i]) {
+				temp=array[i];
 			}
 		}
+		
 		System.out.println(temp);
 	}
+	
 }

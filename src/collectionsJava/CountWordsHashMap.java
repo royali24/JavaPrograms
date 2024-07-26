@@ -1,6 +1,7 @@
 package collectionsJava;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class CountWordsHashMap {
 
@@ -28,8 +29,25 @@ public class CountWordsHashMap {
 			}
 		}
 		System.out.println(map);
+
 		
-		
+		//Another Way of writing for loop
+		/*
+		for (String s: words) {
+			if (map.containsKey(s)) {
+				int count = map.get(s);
+				
+				//System.out.println(words[i]+ count);
+				
+				map.put(s, count + 1);
+				
+			}
+			else {
+				map.put(s, 1);
+			}
+		}
+		System.out.println(map);
+		*/
 	
 		
 	}
