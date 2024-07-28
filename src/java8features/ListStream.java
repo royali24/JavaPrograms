@@ -26,7 +26,7 @@ public class ListStream {
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
-		list= li.stream().filter(s-> s>=6).collect(Collectors.toList());
+		list= li.stream().filter(s-> (s>=6)).collect(Collectors.toList());
 		list.stream().forEach(s->System.out.print(s));
 		System.out.print("\n");
 		
