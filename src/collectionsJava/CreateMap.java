@@ -18,7 +18,7 @@ public class CreateMap {
 		
 		System.out.println("The map keys:" + map.keySet());
 		
-		System.out.println("The map keys:" + map.values());
+		System.out.println("The map values:" + map.values());
 		
 		for(String s: map.keySet()) {
 			System.out.println("Key: " +s + " \nValue: " + map.get(s));
@@ -26,10 +26,12 @@ public class CreateMap {
 		
 		if(map.containsKey("USA")) {
 			System.out.println("The found value of USA : " +map.get("USA"));
+		}else {
+			System.out.println("Key not found");
 		}
 		
 		if(map.containsValue("Paris")) {
-			System.out.println("The found value");
+			System.out.println("Found value");
 		}
 		else {
 			System.out.println("Value not found");
