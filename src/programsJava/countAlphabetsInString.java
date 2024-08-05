@@ -23,7 +23,7 @@ public class countAlphabetsInString {
 					if(characters[i]==characters[j]) {
 						x=x+1;
 						characters[j] = ' ';
-						str=String.valueOf(characters);
+						//str=String.valueOf(characters);
 					}
 				}
 			System.out.println(characters[i] + " is repeated " + x + " times.");
